@@ -1,0 +1,11 @@
+@import "../foundation/devices";
+
+@mixin device($deviceName) {
+  @if map-has-key($devices, $deviceName) {
+    @media (min-witdh: map-get($devices, $deviceName)) {
+      @content;
+    }
+  } @else {
+    @error 'Device #{$deviceName} does not exist in $devices map';
+  }
+}
