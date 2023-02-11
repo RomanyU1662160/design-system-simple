@@ -7,7 +7,8 @@
     "build": " node script/build.js",
     "stylelint:scss": "npx stylelint \"./**/*.scss\" --fix",
     "stylelint:css": "npx stylelint \"./**/*.css\" --fix",
-    "lint:fix": "npm run stylelint:scss && npm run stylelint:css"
+    "lint:fix": "npm run stylelint:scss && npm run stylelint:css",
+    "prepare": "husky install"
   },
   "author": "romany",
   "license": "ISC",
