@@ -1,0 +1,20 @@
+@import "./foundation/all";
+@import "./mixins/all";
+@import "./base/all";
+
+.main-wrapper {
+  background-color: $primary;
+}
+
+// example of using mixins
+@include device("mobile") {
+  .main-wrapper {
+    background-color: $secondary;
+  }
+}
+
+@include device("tablet") {
+  .main-wrapper {
+    background-color: $success;
+  }
+}

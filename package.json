@@ -1,0 +1,33 @@
+{
+  "name": "design-system-simple",
+  "version": "1.0.0",
+  "description": "simple design system",
+  "main": "global.scss",
+  "scripts": {
+    "build": " node script/build.js",
+    "stylelint:scss": "npx stylelint \"./**/*.scss\" --fix",
+    "stylelint:css": "npx stylelint \"./**/*.css\" --fix",
+    "lint:fix": "npm run stylelint:scss && npm run stylelint:css"
+  },
+  "author": "romany",
+  "license": "ISC",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "css-reset-and-normalize": "^2.3.6",
+    "node-sass": "^8.0.0",
+    "stylelint": "^14.16.1",
+    "stylelint-config-prettier": "^9.0.5"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.0",
+    "node-sass-globbing": "^0.0.23",
+    "prettier": "^2.8.4",
+    "prettier-eslint": "^15.0.1",
+    "stylelint": "^14.16.1",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-prettier": "^2.0.0"
+  }
+}
