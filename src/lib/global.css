@@ -84,11 +84,11 @@ mark,
 audio,
 video,
 main {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -116,16 +116,16 @@ summary {
 
 html {
   box-sizing: border-box;
-  touch-action: manipulation;
-  text-size-adjust: 100%;
-  text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  touch-action: manipulation;
 }
 
 body {
-  line-height: 1;
   font-family: sans-serif;
+  line-height: 1;
   text-align: left;
 }
 
@@ -190,9 +190,9 @@ a {
 
 abbr[title] {
   border-bottom: 0;
+  cursor: help;
   text-decoration: underline;
   text-decoration: underline dotted;
-  cursor: help;
   text-decoration-skip-ink: none;
 }
 
@@ -212,9 +212,9 @@ small {
 
 sub,
 sup {
-  position: relative;
   font-size: 75%;
   line-height: 0;
+  position: relative;
 }
 
 sub {
@@ -251,10 +251,10 @@ button,
 select,
 optgroup,
 textarea {
-  margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  margin: 0;
 }
 
 button,
@@ -317,10 +317,10 @@ fieldset {
 }
 
 legend {
-  max-width: 100%;
-  white-space: normal;
   color: inherit;
   display: block;
+  max-width: 100%;
+  white-space: normal;
 }
 
 progress {
@@ -387,5 +387,3 @@ template {
     background-color: #068906;
   }
 }
-
-/*# sourceMappingURL=global.css.map */
